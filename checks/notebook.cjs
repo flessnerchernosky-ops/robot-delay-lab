@@ -1,0 +1,21 @@
+'use strict';
+const assert=require('node:assert/strict'),E=require('../docs/engine.js'),N=require('../docs/notebook.js');
+function simulate(name){const p=E.presets[name],run=new E.Experiment(p);for(let i=0;i<2400;i++)run.step(E.targetAt(run.time,p.motion));return run;}
+const chaos=simulate('chaos'),brake=simulate('brake');
+assert.throws(()=>N.capture(new E.Experiment(E.presets.gentle)),/20 秒/);
+const a=N.capture(chaos,{question:'只改刹车？',guess:'会减少晃动',explanation:'我看到了更低的偏离。'});
+const b=N.capture(brake);
+const before=JSON.stringify(a);chaos.settings.gain=10;chaos.ships[1].sumSquares=0;
+assert.equal(JSON.stringify(a),before,'stored notes must not change when a live experiment changes');
+console.log('PASS partial runs are rejected and completed summaries are independent snapshots');
+const comparison=N.compare(a,b);assert.ok(comparison.eligible);assert.deepEqual(comparison.changed,['damping']);assert.match(comparison.text,/降低 85.2%/);
+const mixed=structuredClone(b);mixed.settings.delay=0.6;assert.equal(N.compare(a,mixed).eligible,false);
+assert.equal(N.compare(a,a).eligible,false);assert.ok(N.compare(a,structuredClone(a)).eligible);
+console.log('PASS comparisons identify a single changed factor and reject mixed changes');
+const dragged=structuredClone(a);dragged.settings.motion='drag';assert.equal(N.compare(dragged,structuredClone(dragged)).eligible,false);
+const manual=structuredClone(b);manual.settings.manual=true;assert.equal(N.compare(a,manual).eligible,false);
+assert.equal(N.compare(a,N.capture(simulate('surprise'))).eligible,false);
+console.log('PASS user-operated or different targets cannot masquerade as controlled comparisons');
+const notes=N.markdown([a,b]);assert.match(notes,/只改刹车？/);assert.match(notes,/6.023598/);assert.match(notes,/0.893515/);assert.match(notes,/待填写/);assert.match(notes,/完整轨迹/);
+console.log('PASS exported notes retain actual measurements, user text and unfilled fields');
+console.log('4 notebook checks passed.');
