@@ -2,6 +2,8 @@
 
 ## 第二期 · 零基础也能玩
 
+新增 [15 分钟学习路线](LEARNING_MISSIONS.md) 与页面内的实验笔记本：保存完整一局的成绩、比较只改一个变量的结果、下载自己填写的 Markdown 笔记。
+
 **[别追过头了：太空追星实验](https://flessnerchernosky-ops.github.io/robot-delay-lab/)**——把小车换成会滑行的飞船，亲手体验反馈、延迟和预测。五个关卡、手动驾驶、偏差曲线和 CSV 下载，不需要控制理论基础，也不需要安装软件。
 
 [完整玩法与实验记录](EPISODE_02.md) · [互动页面源码](docs/) · 下载 ZIP 后也可双击 `docs/index.html` 离线玩。
