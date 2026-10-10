@@ -1,0 +1,1619 @@
+{
+  "model": "arm-lab-v1",
+  "dt": 0.01,
+  "duration": 12,
+  "cases": [
+    {
+      "case": "reach",
+      "settings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.16880083408786098,
+          "late_rmse": 0.08110109902139986,
+          "near_seconds": 2.769999999999985,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.07396483260581913,
+          "late_rmse": 1.7142503373571764e-9,
+          "near_seconds": 11.089999999999808,
+          "catch_time": 1.41,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        }
+      ]
+    },
+    {
+      "case": "overshoot",
+      "settings": {
+        "kp": 16,
+        "kd": 1.5,
+        "delay": 0,
+        "speed": 3,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 16,
+        "kd": 1.5,
+        "delay": 0,
+        "speed": 3,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.18046025457898257,
+          "late_rmse": 0.10198980087391864,
+          "near_seconds": 2.2299999999999964,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 11
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.07137931848136002,
+          "late_rmse": 0.0001240876104192184,
+          "near_seconds": 10.459999999999821,
+          "catch_time": 2.36,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 5
+        }
+      ]
+    },
+    {
+      "case": "delay",
+      "settings": {
+        "kp": 12,
+        "kd": 4,
+        "delay": 0.35,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 12,
+        "kd": 4,
+        "delay": 0.35,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.8101293967603485,
+          "late_rmse": 0.8044580478041882,
+          "near_seconds": 0.060000000000000005,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 669,
+          "torque_limit_steps": 874
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.48792181973062937,
+          "late_rmse": 0.48332349146464226,
+          "near_seconds": 0.060000000000000005,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 418,
+          "torque_limit_steps": 901
+        }
+      ]
+    },
+    {
+      "case": "limits",
+      "settings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0,
+        "speed": 1.5,
+        "limited": true,
+        "motion": "fixed",
+        "target": {
+          "x": -1.15,
+          "y": 0.8
+        }
+      },
+      "initialSettings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0,
+        "speed": 1.5,
+        "limited": true,
+        "motion": "fixed",
+        "target": {
+          "x": -1.15,
+          "y": 0.8
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.9878347332475862,
+          "late_rmse": 0.7431329340402166,
+          "near_seconds": 0,
+          "catch_time": null,
+          "joint_stop_steps": 1,
+          "speed_limit_steps": 115,
+          "torque_limit_steps": 93
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.9542064379517683,
+          "late_rmse": 0.7475897876100343,
+          "near_seconds": 0,
+          "catch_time": null,
+          "joint_stop_steps": 1,
+          "speed_limit_steps": 65,
+          "torque_limit_steps": 43
+        }
+      ]
+    },
+    {
+      "case": "orbit",
+      "settings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0.1,
+        "speed": 2,
+        "limited": false,
+        "motion": "orbit",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0.1,
+        "speed": 2,
+        "limited": false,
+        "motion": "orbit",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.5534510460011002,
+          "late_rmse": 0.5792569572376267,
+          "near_seconds": 0.19000000000000003,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 327,
+          "torque_limit_steps": 323
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.13940983866682635,
+          "late_rmse": 0.10417262545602095,
+          "near_seconds": 0,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        }
+      ]
+    },
+    {
+      "case": "delay-0-kp-8",
+      "settings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.16880083408786098,
+          "late_rmse": 0.08110109902139986,
+          "near_seconds": 2.769999999999985,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.07396483260581913,
+          "late_rmse": 1.7142503373571764e-9,
+          "near_seconds": 11.089999999999808,
+          "catch_time": 1.41,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        }
+      ]
+    },
+    {
+      "case": "delay-0-kp-16",
+      "settings": {
+        "kp": 16,
+        "kd": 4,
+        "delay": 0,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 16,
+        "kd": 4,
+        "delay": 0,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.18046025457898257,
+          "late_rmse": 0.10198980087391864,
+          "near_seconds": 2.2299999999999964,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 11
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.059627059690705767,
+          "late_rmse": 2.5827563937008132e-9,
+          "near_seconds": 11.4799999999998,
+          "catch_time": 1.42,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 3
+        }
+      ]
+    },
+    {
+      "case": "delay-0.05-kp-8",
+      "settings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0.05,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0.05,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.4478384717413824,
+          "late_rmse": 0.5095900670756904,
+          "near_seconds": 0.7700000000000005,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 52,
+          "torque_limit_steps": 0
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.07523614148343874,
+          "late_rmse": 3.527897732503933e-10,
+          "near_seconds": 11.129999999999807,
+          "catch_time": 1.37,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        }
+      ]
+    },
+    {
+      "case": "delay-0.05-kp-16",
+      "settings": {
+        "kp": 16,
+        "kd": 4,
+        "delay": 0.05,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 16,
+        "kd": 4,
+        "delay": 0.05,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.5187254247134833,
+          "late_rmse": 0.54805791464587,
+          "near_seconds": 0.07,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 317,
+          "torque_limit_steps": 1018
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.0635631086660574,
+          "late_rmse": 5.030622123133316e-9,
+          "near_seconds": 11.179999999999806,
+          "catch_time": 1.53,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 8
+        }
+      ]
+    },
+    {
+      "case": "delay-0.1-kp-8",
+      "settings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0.1,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0.1,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.55526143846882,
+          "late_rmse": 0.6051479276685139,
+          "near_seconds": 0.20000000000000004,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 288,
+          "torque_limit_steps": 321
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.07685079777928236,
+          "late_rmse": 1.281675966010458e-12,
+          "near_seconds": 11.189999999999806,
+          "catch_time": 1.31,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        }
+      ]
+    },
+    {
+      "case": "delay-0.1-kp-16",
+      "settings": {
+        "kp": 16,
+        "kd": 4,
+        "delay": 0.1,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 16,
+        "kd": 4,
+        "delay": 0.1,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.5370581212401622,
+          "late_rmse": 0.5446966657015021,
+          "near_seconds": 0.060000000000000005,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 515,
+          "torque_limit_steps": 988
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.06994350402031016,
+          "late_rmse": 1.6794618026675347e-7,
+          "near_seconds": 11.069999999999808,
+          "catch_time": 1.55,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 13
+        }
+      ]
+    },
+    {
+      "case": "delay-0.2-kp-8",
+      "settings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0.2,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0.2,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.6616688061065421,
+          "late_rmse": 0.6864128715902545,
+          "near_seconds": 0.09999999999999999,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 474,
+          "torque_limit_steps": 542
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.08395494504513872,
+          "late_rmse": 0.000011765778546246969,
+          "near_seconds": 11.02999999999981,
+          "catch_time": 1.6600000000000001,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        }
+      ]
+    },
+    {
+      "case": "delay-0.2-kp-16",
+      "settings": {
+        "kp": 16,
+        "kd": 4,
+        "delay": 0.2,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 16,
+        "kd": 4,
+        "delay": 0.2,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.6326812203330124,
+          "late_rmse": 0.6435406133990174,
+          "near_seconds": 0.05,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 586,
+          "torque_limit_steps": 990
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.4466471259728123,
+          "late_rmse": 0.47378441060391585,
+          "near_seconds": 0.060000000000000005,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 986
+        }
+      ]
+    },
+    {
+      "case": "delay-0.3-kp-8",
+      "settings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0.3,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0.3,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.798632572907151,
+          "late_rmse": 0.80416733162048,
+          "near_seconds": 0.08,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 593,
+          "torque_limit_steps": 680
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.36671333703653536,
+          "late_rmse": 0.39616830301602457,
+          "near_seconds": 0.2800000000000001,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 653
+        }
+      ]
+    },
+    {
+      "case": "delay-0.3-kp-16",
+      "settings": {
+        "kp": 16,
+        "kd": 4,
+        "delay": 0.3,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 16,
+        "kd": 4,
+        "delay": 0.3,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.7162268069884811,
+          "late_rmse": 0.7453768589029339,
+          "near_seconds": 0.05,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 596,
+          "torque_limit_steps": 954
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.4697176386399544,
+          "late_rmse": 0.4665908088132091,
+          "near_seconds": 0.05,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 412,
+          "torque_limit_steps": 993
+        }
+      ]
+    },
+    {
+      "case": "delay-0.4-kp-8",
+      "settings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0.4,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0.4,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.9341457130473368,
+          "late_rmse": 0.925253111668807,
+          "near_seconds": 0.07,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 693,
+          "torque_limit_steps": 786
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.4532443352546694,
+          "late_rmse": 0.4668467988164449,
+          "near_seconds": 0.08,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 328,
+          "torque_limit_steps": 739
+        }
+      ]
+    },
+    {
+      "case": "delay-0.4-kp-16",
+      "settings": {
+        "kp": 16,
+        "kd": 4,
+        "delay": 0.4,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 16,
+        "kd": 4,
+        "delay": 0.4,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.8056843263254251,
+          "late_rmse": 0.8404122120561462,
+          "near_seconds": 0.3900000000000002,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 594,
+          "torque_limit_steps": 930
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.5566620540902381,
+          "late_rmse": 0.5736366980219996,
+          "near_seconds": 0.05,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 465,
+          "torque_limit_steps": 963
+        }
+      ]
+    },
+    {
+      "case": "delay-0.5-kp-8",
+      "settings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0.5,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0.5,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 1.180651711781534,
+          "late_rmse": 1.3416469368515542,
+          "near_seconds": 0.07,
+          "catch_time": null,
+          "joint_stop_steps": 5,
+          "speed_limit_steps": 884,
+          "torque_limit_steps": 955
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.5574882140063283,
+          "late_rmse": 0.5668786504864858,
+          "near_seconds": 0.12999999999999998,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 374,
+          "torque_limit_steps": 750
+        }
+      ]
+    },
+    {
+      "case": "delay-0.5-kp-16",
+      "settings": {
+        "kp": 16,
+        "kd": 4,
+        "delay": 0.5,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 16,
+        "kd": 4,
+        "delay": 0.5,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.8884368632604075,
+          "late_rmse": 0.882105425342163,
+          "near_seconds": 0.4000000000000002,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 659,
+          "torque_limit_steps": 936
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.6440698947224972,
+          "late_rmse": 0.6577999149450887,
+          "near_seconds": 0.5000000000000002,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 484,
+          "torque_limit_steps": 908
+        }
+      ]
+    },
+    {
+      "case": "delay-0.6-kp-8",
+      "settings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0.6,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0.6,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 1.343212568908088,
+          "late_rmse": 1.5842547592066556,
+          "near_seconds": 0.07,
+          "catch_time": null,
+          "joint_stop_steps": 5,
+          "speed_limit_steps": 892,
+          "torque_limit_steps": 922
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.6639513346196612,
+          "late_rmse": 0.6479726107533553,
+          "near_seconds": 0.07,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 507,
+          "torque_limit_steps": 838
+        }
+      ]
+    },
+    {
+      "case": "delay-0.6-kp-16",
+      "settings": {
+        "kp": 16,
+        "kd": 4,
+        "delay": 0.6,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 16,
+        "kd": 4,
+        "delay": 0.6,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 1.2211992465680326,
+          "late_rmse": 1.4463353101063536,
+          "near_seconds": 0.05,
+          "catch_time": null,
+          "joint_stop_steps": 6,
+          "speed_limit_steps": 982,
+          "torque_limit_steps": 1134
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.7451796744402371,
+          "late_rmse": 0.7350773309557552,
+          "near_seconds": 0.4100000000000002,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 581,
+          "torque_limit_steps": 924
+        }
+      ]
+    },
+    {
+      "case": "braking-0",
+      "settings": {
+        "kp": 8,
+        "kd": 0,
+        "delay": 0,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 8,
+        "kd": 0,
+        "delay": 0,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.16880083408786098,
+          "late_rmse": 0.08110109902139986,
+          "near_seconds": 2.769999999999985,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.16880083408786098,
+          "late_rmse": 0.08110109902139986,
+          "near_seconds": 2.769999999999985,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        }
+      ]
+    },
+    {
+      "case": "braking-0.5",
+      "settings": {
+        "kp": 8,
+        "kd": 0.5,
+        "delay": 0,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 8,
+        "kd": 0.5,
+        "delay": 0,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.16880083408786098,
+          "late_rmse": 0.08110109902139986,
+          "near_seconds": 2.769999999999985,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.10321420787691006,
+          "late_rmse": 0.007843701514976643,
+          "near_seconds": 8.389999999999866,
+          "catch_time": 4.24,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        }
+      ]
+    },
+    {
+      "case": "braking-1",
+      "settings": {
+        "kp": 8,
+        "kd": 1,
+        "delay": 0,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 8,
+        "kd": 1,
+        "delay": 0,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.16880083408786098,
+          "late_rmse": 0.08110109902139986,
+          "near_seconds": 2.769999999999985,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.08379281369004446,
+          "late_rmse": 0.0009125162335619453,
+          "near_seconds": 9.839999999999835,
+          "catch_time": 3.13,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        }
+      ]
+    },
+    {
+      "case": "braking-2",
+      "settings": {
+        "kp": 8,
+        "kd": 2,
+        "delay": 0,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 8,
+        "kd": 2,
+        "delay": 0,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.16880083408786098,
+          "late_rmse": 0.08110109902139986,
+          "near_seconds": 2.769999999999985,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.07210679678325009,
+          "late_rmse": 0.0000109222422498919,
+          "near_seconds": 10.639999999999818,
+          "catch_time": 2.11,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        }
+      ]
+    },
+    {
+      "case": "braking-4",
+      "settings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.16880083408786098,
+          "late_rmse": 0.08110109902139986,
+          "near_seconds": 2.769999999999985,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.07396483260581913,
+          "late_rmse": 1.7142503373571764e-9,
+          "near_seconds": 11.089999999999808,
+          "catch_time": 1.41,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        }
+      ]
+    },
+    {
+      "case": "braking-8",
+      "settings": {
+        "kp": 8,
+        "kd": 8,
+        "delay": 0,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 8,
+        "kd": 8,
+        "delay": 0,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.16880083408786098,
+          "late_rmse": 0.08110109902139986,
+          "near_seconds": 2.769999999999985,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.091274402417664,
+          "late_rmse": 0.0000230918396836121,
+          "near_seconds": 10.08999999999983,
+          "catch_time": 2.41,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        }
+      ]
+    },
+    {
+      "case": "speed-0.5",
+      "settings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0,
+        "speed": 0.5,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0,
+        "speed": 0.5,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.10920850860338704,
+          "late_rmse": 0.0470165168589842,
+          "near_seconds": 4.539999999999948,
+          "catch_time": 7.88,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 70,
+          "torque_limit_steps": 0
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.07411452065596708,
+          "late_rmse": 1.689790842236665e-9,
+          "near_seconds": 11.079999999999808,
+          "catch_time": 1.42,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 7,
+          "torque_limit_steps": 0
+        }
+      ]
+    },
+    {
+      "case": "speed-1",
+      "settings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0,
+        "speed": 1,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0,
+        "speed": 1,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.1576254016438872,
+          "late_rmse": 0.075001746714038,
+          "near_seconds": 3.00999999999998,
+          "catch_time": 11.94,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 15,
+          "torque_limit_steps": 0
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.07396483260581913,
+          "late_rmse": 1.7142503373571764e-9,
+          "near_seconds": 11.089999999999808,
+          "catch_time": 1.41,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        }
+      ]
+    },
+    {
+      "case": "speed-2",
+      "settings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0,
+        "speed": 2,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.16880083408786098,
+          "late_rmse": 0.08110109902139986,
+          "near_seconds": 2.769999999999985,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.07396483260581913,
+          "late_rmse": 1.7142503373571764e-9,
+          "near_seconds": 11.089999999999808,
+          "catch_time": 1.41,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        }
+      ]
+    },
+    {
+      "case": "speed-3",
+      "settings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0,
+        "speed": 3,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "initialSettings": {
+        "kp": 8,
+        "kd": 4,
+        "delay": 0,
+        "speed": 3,
+        "limited": false,
+        "motion": "fixed",
+        "target": {
+          "x": 1.1,
+          "y": 0.65
+        }
+      },
+      "dt": 0.01,
+      "interactive": false,
+      "targets": [],
+      "metrics": [
+        {
+          "kind": "p",
+          "rmse": 0.16880083408786098,
+          "late_rmse": 0.08110109902139986,
+          "near_seconds": 2.769999999999985,
+          "catch_time": null,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        },
+        {
+          "kind": "pd",
+          "rmse": 0.07396483260581913,
+          "late_rmse": 1.7142503373571764e-9,
+          "near_seconds": 11.089999999999808,
+          "catch_time": 1.41,
+          "joint_stop_steps": 0,
+          "speed_limit_steps": 0,
+          "torque_limit_steps": 0
+        }
+      ]
+    }
+  ]
+}
