@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="不需要控制理论基础的太空追星实验：亲手感受延迟、过度纠正和预测。">
+  <title>别追过头了 · 太空追星实验</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="engine.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<main>
+  <nav><a href="https://github.com/flessnerchernosky-ops/robot-delay-lab">ROBOT DELAY LAB ↗</a><span>第二期 / 零基础互动篇</span></nav>
+  <header><div><p class="eyebrow">一颗星星，三种反应方式</p><h1>别追过头了<span>太空追星实验</span></h1>
+    <p class="intro">为什么越着急追上目标，反而越容易来回晃？<br>给飞船一点延迟，你就能亲眼看到答案。</p></div>
+    <div class="hero-note"><span>03 MIN</span><p>不用安装 · 不用公式<br>先玩，再理解</p></div></header>
+  <section class="mission" aria-label="实验场景"><div><span class="pill">选择一段旅程</span><p id="mission-copy">先看没有延迟时，飞船如何停在星星附近。</p></div>
+    <div class="presets"><button data-preset="gentle" class="selected" aria-pressed="true">① 轻松靠近</button><button data-preset="chaos" aria-pressed="false">② 越追越晃</button><button data-preset="brake" aria-pressed="false">③ 学会刹车</button><button data-preset="wander" aria-pressed="false">④ 星星也会走</button><button data-preset="surprise" aria-pressed="false">⑤ 预测也会错</button></div></section>
+  <section class="lab"><div class="flight-panel"><div class="panel-heading"><div><span class="live-dot"></span><strong id="run-state" aria-live="polite">飞行中</strong></div><span id="timer">0.0 / 20 秒</span></div>
+    <canvas id="space" height="390" aria-label="飞船位置动画。三行分别显示立即反应、延迟反应和预测反应；星星是共同目标。"></canvas>
+    <div class="flight-footer"><span>★ 共同目标 <span class="subtle">· 可在飞行区拖动星星</span></span><div><button id="pause">暂停</button><button id="restart">重来一局 ↻</button></div></div>
+    <div class="scorecards"><div><i class="cyan"></i><span>立即反应</span><strong id="score-instant">—</strong></div><div><i class="coral"></i><span>有延迟</span><strong id="score-delayed">—</strong></div><div><i class="violet"></i><span>预测反应</span><strong id="score-predictor">—</strong></div></div>
+    <p class="metric-note">数字越小，整局离星星越近。把每一瞬间的距离汇总，得到“典型偏离距离”（RMSE，仿真单位）；包含起步过程。飞行结束后再公平比较。</p>
+  </div><aside class="controls"><h2>飞船的性格</h2><p>每次改设置会从同一起点重新开始。</p>
+    <label for="delay">指令多久才生效？<output id="delay-value" for="delay">0.00 秒</output></label><input id="delay" type="range" min="0" max="1.2" step="0.05" value="0"><p class="hint">延迟期间，旧指令还在执行。</p>
+    <label for="gain">有多着急追上？<output id="gain-value" for="gain">3.0</output></label><input id="gain" type="range" min="1" max="10" step="0.5" value="3"><p class="hint">着急程度越高，偏离一点就更用力。</p>
+    <label for="damping">有多愿意刹车？<output id="damping-value" for="damping">0.80</output></label><input id="damping" type="range" min="0.1" max="1.5" step="0.05" value="0.8"><p class="hint">看见自己冲得快，就少踩油门。</p>
+    <label for="motion">星星怎么走？</label><select id="motion"><option value="fixed">停在原地</option><option value="wander">左右巡游</option><option value="fast">快速折返</option><option value="drag">由我拖动</option></select>
+    <label class="check"><input type="checkbox" id="manual"> 我也驾驶一艘</label><div id="manual-controls" hidden><p>长按按钮，或按 A / D、← / →。松开停止推进；仍会惯性滑行。你的指令也有同样的延迟。</p><div class="pilot-buttons"><button id="left" aria-label="向左推进">← 左推</button><button id="right" aria-label="向右推进">右推 →</button></div><p>你的典型偏离距离：<strong id="score-manual">—</strong></p></div>
+    <button id="export" class="download">下载这一局的记录 ↓</button><p id="download-state" class="hint" aria-live="polite">记录保存在你的设备，页面不上传数据。</p>
+  </aside></section>
+  <section class="chart-panel"><div class="panel-heading"><h2>谁还在来回晃？</h2><span>距星星的左右偏差 · 最近 10 秒</span></div><canvas id="chart" height="150" aria-label="偏差曲线：零线代表与星星重合。颜色与三艘飞船一致。"></canvas><p id="observation" aria-live="polite">观察珊瑚色飞船：它会不会冲过星星又折回来？</p></section>
+  <section class="explain"><article><span class="step">01 / 反馈</span><h2>边看边改</h2><p>发现星星在右边，就向右推；发现自己冲得太快，就刹车。“观察 → 调整 → 再观察”就是反馈。你调淋浴水温时，也在做类似的事。</p></article><article><span class="step">02 / 延迟</span><h2>修正来晚了</h2><p>你刚刚想向右推，但飞船过一会儿才收到指令。等它收到时，你可能已经需要向左推了。越用力纠正，越可能来回追过头。</p></article><article><span class="step">03 / 预测</span><h2>先想一想将来的位置</h2><p>紫色飞船会根据当前速度和排队中的指令，估计新指令生效时的位置。它还假设星星会暂时保持当前速度。突然转向时，这个猜测也会错。</p></article></section>
+  <section class="challenge"><div><p class="eyebrow">轮到你发现</p><h2>三个小挑战</h2></div><ol><li>选“越追越晃”。其他设置不变，只把延迟降到 0，观察两条曲线。</li><li>把“愿意刹车”逐渐调高。是否越高就一定更好？用整局记录支持你的回答。</li><li>选“星星也会走”，再突然拖动星星。预测飞船会不会猜错？预测并不是偷看未来。</li></ol></section>
+  <footer><p>这是一个一维虚构飞船模型：有限推进力、微弱阻力、推进指令等待队列。三种自动方法共用参数；立即反应是零延迟参考。它帮助理解原理，不代表真实航天器或淋浴系统。</p><a href="https://github.com/flessnerchernosky-ops/robot-delay-lab/blob/main/EPISODE_02.md">读完整的玩法、模型与复现实验 ↗</a><p>开源 MIT · 无外部字体、追踪脚本或运行依赖 · AI 协助制作</p></footer>
+</main>
+</body></html>
