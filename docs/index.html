@@ -5,7 +5,7 @@
   <meta name="description" content="不需要控制理论基础的太空追星实验：亲手感受延迟、过度纠正和预测。">
   <title>别追过头了 · 太空追星实验</title>
   <link rel="stylesheet" href="style.css">
-  <script src="engine.js" defer></script><script src="app.js" defer></script>
+  <script src="engine.js" defer></script><script src="notebook.js" defer></script><script src="app.js" defer></script>
 </head>
 <body>
 <main>
@@ -29,8 +29,17 @@
     <button id="export" class="download">下载这一局的记录 ↓</button><p id="download-state" class="hint" aria-live="polite">记录保存在你的设备，页面不上传数据。</p>
   </aside></section>
   <section class="chart-panel"><div class="panel-heading"><h2>谁还在来回晃？</h2><span>距星星的左右偏差 · 最近 10 秒</span></div><canvas id="chart" height="150" aria-label="偏差曲线：零线代表与星星重合。颜色与三艘飞船一致。"></canvas><p id="observation" aria-live="polite">观察珊瑚色飞船：它会不会冲过星星又折回来？</p></section>
+  <section class="delay-story" aria-labelledby="delay-story-title"><h2 id="delay-story-title">一条指令的旅程</h2><ol><li><span>1 · 现在看见</span><strong>“星星在右边”</strong><p>根据位置和速度，决定向右推多少。</p></li><li><span>2 · 排队等待</span><strong>“新指令还没到”</strong><p>飞船继续滑行，旧指令还在执行。</p></li><li><span>3 · 终于生效</span><strong>“位置已经变了”</strong><p>新指令按原计划执行，却可能已经推得太晚。</p></li><li><span>4 · 再次纠正</span><strong>“这次往左推”</strong><p>纠正也要等待。用力过大时，就可能反复追过头。</p></li></ol></section>
   <section class="explain"><article><span class="step">01 / 反馈</span><h2>边看边改</h2><p>发现星星在右边，就向右推；发现自己冲得太快，就刹车。“观察 → 调整 → 再观察”就是反馈。你调淋浴水温时，也在做类似的事。</p></article><article><span class="step">02 / 延迟</span><h2>修正来晚了</h2><p>你刚刚想向右推，但飞船过一会儿才收到指令。等它收到时，你可能已经需要向左推了。越用力纠正，越可能来回追过头。</p></article><article><span class="step">03 / 预测</span><h2>先想一想将来的位置</h2><p>紫色飞船会根据当前速度和排队中的指令，估计新指令生效时的位置。它还假设星星会暂时保持当前速度。突然转向时，这个猜测也会错。</p></article></section>
-  <section class="challenge"><div><p class="eyebrow">轮到你发现</p><h2>三个小挑战</h2></div><ol><li>选“越追越晃”。其他设置不变，只把延迟降到 0，观察两条曲线。</li><li>把“愿意刹车”逐渐调高。是否越高就一定更好？用整局记录支持你的回答。</li><li>选“星星也会走”，再突然拖动星星。预测飞船会不会猜错？预测并不是偷看未来。</li></ol></section>
+  <section class="challenge"><div><p class="eyebrow">轮到你发现</p><h2>三个小挑战</h2><a href="#notebook">把发现记下来 ↓</a></div><ol><li>选“越追越晃”。其他设置不变，只把延迟降到 0，观察两条曲线。</li><li>把“愿意刹车”逐渐调高。是否越高就一定更好？用整局记录支持你的回答。</li><li>选“星星也会走”，再突然拖动星星。预测飞船会不会猜错？预测并不是偷看未来。</li></ol></section>
+  <section class="notebook" id="notebook" aria-labelledby="notebook-title">
+    <div class="notebook-heading"><div><p class="eyebrow">从试玩到自己的发现</p><h2 id="notebook-title">我的实验笔记本</h2></div><a href="https://github.com/flessnerchernosky-ops/robot-delay-lab/blob/main/LEARNING_MISSIONS.md">15 分钟学习路线 ↗</a></div>
+    <p class="notebook-intro">先写猜测，再跑完一局、记下解释。成绩会保留到你关闭或刷新页面；最多 12 条，请及时下载笔记。内容只在当前页面，不上传。</p>
+    <div class="note-fields"><label for="note-question">我想弄清楚什么？<input id="note-question" maxlength="160" placeholder="例如：延迟相同，多刹车会不会更稳？"></label><label for="note-guess">我的猜测（建议开始前写）<textarea id="note-guess" maxlength="600" rows="3" placeholder="我猜……因为……"></textarea></label><label for="note-explanation">看完成绩，我怎么解释？<textarea id="note-explanation" maxlength="1000" rows="3" placeholder="我观察到……它支持／不支持我的猜测……"></textarea></label></div>
+    <div class="notebook-actions"><button id="save-run" disabled>跑完 20 秒后保存成绩</button><button id="download-notes" disabled>下载我的实验笔记 ↓</button></div><p id="notebook-state" class="hint" aria-live="polite">还没有保存记录。运行结束后，点击保存；不会自动替你填写发现。</p>
+    <div id="notebook-results" hidden><div class="table-scroll" role="region" aria-label="已保存的实验成绩" tabindex="0"><table><thead><tr><th>实验</th><th>目标</th><th>延迟 / 着急 / 刹车</th><th>立即反应</th><th>有延迟</th><th>预测反应</th></tr></thead><tbody id="notebook-rows"></tbody></table></div>
+    <div class="compare-pickers"><label for="compare-base">原设置<select id="compare-base"></select></label><label for="compare-new">新设置<select id="compare-new"></select></label></div><p id="comparison" aria-live="polite"></p><p class="hint">只比较同一种自动目标、关闭手动驾驶、一次只改一个参数的两局。拖动与手动操作可以记录，但不能当作同条件的参数对照。</p></div>
+  </section>
   <footer><p>这是一个一维虚构飞船模型：有限推进力、微弱阻力、推进指令等待队列。三种自动方法共用参数；立即反应是零延迟参考。它帮助理解原理，不代表真实航天器或淋浴系统。</p><a href="https://github.com/flessnerchernosky-ops/robot-delay-lab/blob/main/EPISODE_02.md">读完整的玩法、模型与复现实验 ↗</a><p>开源 MIT · 无外部字体、追踪脚本或运行依赖 · AI 协助制作</p></footer>
 </main>
 </body></html>

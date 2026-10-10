@@ -4,6 +4,8 @@
   const colors = ['#5cddd6','#ff9780','#b7a3ff','#f2ce7e'];
   const labels = ['立即反应','有延迟','预测反应','你来驾驶'];
   const presets = E.presets;
+  const N = window.StarNotebook, notebook = [];
+  let runSaved=false;
   let run, paused=false, previousTime=null, accumulator=0, dragTarget=1.2;
   let target={x:1.2,v:0}, keys=new Set(), buttons=new Set(), activePreset='gentle';
   const settings = () => ({delay:Number($('delay').value),gain:Number($('gain').value),
@@ -20,6 +22,7 @@
   }
   function restart() {
     run = new E.Experiment(settings()); paused=false; previousTime=null; accumulator=0;
+    runSaved=false;
     dragTarget=1.2; target={x:1.2,v:0}; keys.clear(); buttons.clear();
     $('pause').textContent='暂停'; $('pause').disabled=false;
     $('download-state').textContent='记录保存在你的设备，页面不上传数据。';
@@ -150,6 +153,8 @@
   function updateScores() {
     ['instant','delayed','predictor','manual'].forEach((name,i)=>$('score-'+name).textContent=run.ships[i].count?run.ships[i].rmse.toFixed(2):'—');
     const finished=run.time>=20;
+    $('save-run').disabled=!finished||runSaved||notebook.length>=12;
+    $('save-run').textContent=runSaved?'本局成绩已保存':notebook.length>=12?'已保存 12 条，请下载笔记':finished?'保存本局成绩':'跑完 20 秒后保存成绩';
     $('run-state').textContent=finished?'本局完成':paused?'已暂停':'飞行中';
     $('timer').textContent=`${run.time.toFixed(1)} / 20 秒`;
     if(finished){$('pause').disabled=true;
@@ -166,6 +171,45 @@
     const anchor=document.createElement('a');anchor.href=url;anchor.download='star-chase-experiment.csv';anchor.click();
     setTimeout(()=>URL.revokeObjectURL(url),1000);
     $('download-state').textContent=`已下载 ${run.rows.length} 个采样点（${run.time.toFixed(1)} 秒），包含设置、目标和推进指令。`;
+  });
+  function updateComparison() {
+    $('comparison').textContent=N.compare(notebook[Number($('compare-base').value)],notebook[Number($('compare-new').value)]).text;
+  }
+  function renderNotebook() {
+    $('notebook-results').hidden=!notebook.length;
+    $('download-notes').disabled=!notebook.length;
+    $('notebook-rows').replaceChildren();
+    $('compare-base').replaceChildren();$('compare-new').replaceChildren();
+    notebook.forEach((entry,index)=>{
+      const s=entry.settings,row=document.createElement('tr');
+      [`${index+1}${s.manual?' · 手动':''}`,N.motions[s.motion],
+        `${s.delay.toFixed(2)} / ${s.gain.toFixed(1)} / ${s.damping.toFixed(2)}`,
+        ...entry.scores.map(score=>score.toFixed(3))].forEach(value=>{
+          const cell=document.createElement('td');cell.textContent=value;row.append(cell);
+        });
+      $('notebook-rows').append(row);
+      ['compare-base','compare-new'].forEach(id=>{
+        const option=document.createElement('option');option.value=index;option.textContent=`实验 ${index+1}`;$(id).append(option);
+      });
+    });
+    $('compare-base').value=Math.max(0,notebook.length-2);
+    $('compare-new').value=Math.max(0,notebook.length-1);
+    updateComparison();
+  }
+  $('save-run').addEventListener('click',()=>{
+    if(runSaved||notebook.length>=12||run.tick!==2400)return;
+    notebook.push(N.capture(run,{question:$('note-question').value,guess:$('note-guess').value,
+      explanation:$('note-explanation').value}));runSaved=true;
+    renderNotebook();updateScores();
+    $('notebook-state').textContent=`已保存实验 ${notebook.length}，含 20 秒完整成绩和你当前填写的笔记。新一局开始前，请更新猜测与解释；保存后这条笔记不会随输入框改变。`;
+  });
+  ['compare-base','compare-new'].forEach(id=>$(id).addEventListener('change',updateComparison));
+  $('download-notes').addEventListener('click',()=>{
+    if(!notebook.length)return;
+    const url=URL.createObjectURL(new Blob([N.markdown(notebook)],{type:'text/markdown;charset=utf-8'}));
+    const anchor=document.createElement('a');anchor.href=url;anchor.download='my-star-lab-notes.md';anchor.click();
+    setTimeout(()=>URL.revokeObjectURL(url),1000);
+    $('notebook-state').textContent=`已下载 ${notebook.length} 条实验笔记。完整轨迹 CSV 请在对应那一局另行下载。`;
   });
   window.addEventListener('resize',draw);
   function frame(now) {
