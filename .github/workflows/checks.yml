@@ -17,3 +17,9 @@ jobs:
         run: node checks/star_lab.cjs
       - name: Check completed-run notes and comparisons
         run: node checks/notebook.cjs
+      - name: Check arm geometry, servos and experiment comparisons
+        run: node checks/arm.cjs
+      - name: Independently verify sampled arm dynamics
+        run: python verify_arm.py
+      - name: Check reproducible arm benchmark files
+        run: node checks/arm_benchmark.cjs
