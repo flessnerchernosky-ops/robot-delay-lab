@@ -1,5 +1,20 @@
 # Robot Delay Lab
 
+[中文](README.md) · [English](README.en.md)
+
+## 第三期 · 机械臂抓星星
+
+**[在线试玩：机械臂抓星星 / Catch the Stars](https://flessnerchernosky-ops.github.io/robot-delay-lab/arm/)**——打开浏览器，让两种策略抓同一颗星星：只追位置的 P，以及会根据速度刹车的 PD。五个挑战包括够得着吗、抓过头了、指令来晚了、关节卡住了和移动目标。无需硬件或安装，界面支持中文 / English。
+
+可拖动目标、调整参数、下载完整 CSV、保存自己的实验笔记，并检查两局是否只改变了一个变量。项目提供 31 组配置条目（含重复基线）、62 条确定性轨迹的成绩与设置快照；15 项模型检查及 Python 独立离散线性系统校验。
+
+[中文模型与复现说明](EPISODE_03.zh-CN.md) · [English model and reproduction guide](EPISODE_03.en.md) · [实验成绩](examples/arm/summary.csv) · [模型源码](docs/arm/engine.js)
+
+这是一种独立关节伺服教学模型，未包含重力、关节耦合、碰撞、抓手或实物验证。结果用于理解与对照实验，不能直接用于真实机械臂。
+
+![机械臂双语互动实验](docs/arm/preview.jpg)
+
+
 ## 第二期 · 零基础也能玩
 
 新增 [15 分钟学习路线](LEARNING_MISSIONS.md) 与页面内的实验笔记本：保存完整一局的成绩、比较只改一个变量的结果、下载自己填写的 Markdown 笔记。
