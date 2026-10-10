@@ -1,0 +1,4 @@
+speed_m_s,lookahead_m,dt_s,continuous_local_boundary_s,first_sampled_nonstable_delay_s,last_sampled_stable_delay_s
+0.5,1.0,0.02,1.0409886940045665,1.04,1.02
+1.0,1.0,0.02,0.5204943470022833,0.52,0.5
+1.5,1.0,0.02,0.3469962313348555,0.34,0.32

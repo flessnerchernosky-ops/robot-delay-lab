@@ -1,0 +1,5098 @@
+[
+  {
+    "case_id": "case_0001",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0002",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0003",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0004",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0005",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0006",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0007",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0008",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0009",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0010",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0011",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0012",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0013",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0014",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0015",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0016",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0017",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0018",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0019",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0020",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0021",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0022",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0023",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0024",
+    "group": "comparison",
+    "route": "straight",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0025",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0026",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0027",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0028",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0029",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0030",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0031",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0032",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0033",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0034",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0035",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0036",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0037",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0038",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0039",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0040",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0041",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0042",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0043",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0044",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0045",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0046",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0047",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0048",
+    "group": "comparison",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0049",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0050",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0051",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0052",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0053",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0054",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0055",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0056",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0057",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0058",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0059",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0060",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0061",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0062",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0063",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0064",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0065",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0066",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0067",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0068",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0069",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0070",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0071",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0072",
+    "group": "comparison",
+    "route": "arc",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0073",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0074",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0075",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0076",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0077",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0078",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0079",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0080",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0081",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0082",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0083",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0084",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0085",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0086",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0087",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0088",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0089",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0090",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0091",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0092",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0093",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0094",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0095",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0096",
+    "group": "holdout",
+    "route": "tight_s",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0097",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0098",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0099",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0100",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0101",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0102",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0103",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0104",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 0.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0105",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0106",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0107",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0108",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0109",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0110",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0111",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0112",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0113",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0114",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.0
+      ]
+    },
+    "delay_s": 0.0,
+    "estimated_delay_s": 0.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0115",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0116",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.2
+      ]
+    },
+    "delay_s": 0.2,
+    "estimated_delay_s": 0.2,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0117",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0118",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.5
+      ]
+    },
+    "delay_s": 0.5,
+    "estimated_delay_s": 0.5,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0119",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0120",
+    "group": "holdout",
+    "route": "lane_change",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.5,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "lane_change"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0121",
+    "group": "lookahead",
+    "route": "straight",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 0.6,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0122",
+    "group": "lookahead",
+    "route": "straight",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 0.6,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0123",
+    "group": "lookahead",
+    "route": "straight",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0124",
+    "group": "lookahead",
+    "route": "straight",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0125",
+    "group": "lookahead",
+    "route": "straight",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.4,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0126",
+    "group": "lookahead",
+    "route": "straight",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.4,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0127",
+    "group": "lookahead",
+    "route": "straight",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.8,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0128",
+    "group": "lookahead",
+    "route": "straight",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.8,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0129",
+    "group": "lookahead",
+    "route": "straight",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 2.2,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0130",
+    "group": "lookahead",
+    "route": "straight",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 2.2,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "straight"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0131",
+    "group": "lookahead",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 0.6,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0132",
+    "group": "lookahead",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 0.6,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0133",
+    "group": "lookahead",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0134",
+    "group": "lookahead",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0135",
+    "group": "lookahead",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.4,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0136",
+    "group": "lookahead",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.4,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0137",
+    "group": "lookahead",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.8,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0138",
+    "group": "lookahead",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.8,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0139",
+    "group": "lookahead",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 2.2,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0140",
+    "group": "lookahead",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 2.2,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0141",
+    "group": "lookahead",
+    "route": "arc",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 0.6,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0142",
+    "group": "lookahead",
+    "route": "arc",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 0.6,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0143",
+    "group": "lookahead",
+    "route": "arc",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0144",
+    "group": "lookahead",
+    "route": "arc",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0145",
+    "group": "lookahead",
+    "route": "arc",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.4,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0146",
+    "group": "lookahead",
+    "route": "arc",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.4,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0147",
+    "group": "lookahead",
+    "route": "arc",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.8,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0148",
+    "group": "lookahead",
+    "route": "arc",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.8,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0149",
+    "group": "lookahead",
+    "route": "arc",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 2.2,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0150",
+    "group": "lookahead",
+    "route": "arc",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 2.2,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "arc"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0151",
+    "group": "delay_mismatch",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.4,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0152",
+    "group": "delay_mismatch",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.6000000000000001,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0153",
+    "group": "delay_mismatch",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0154",
+    "group": "delay_mismatch",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 1.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0155",
+    "group": "delay_mismatch",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 1.2000000000000002,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0156",
+    "group": "model_mismatch",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 0.7
+  },
+  {
+    "case_id": "case_0157",
+    "group": "model_mismatch",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0158",
+    "group": "model_mismatch",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.3
+  },
+  {
+    "case_id": "case_0159",
+    "group": "delay_mismatch",
+    "route": "tight_s",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.4,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0160",
+    "group": "delay_mismatch",
+    "route": "tight_s",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.6000000000000001,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0161",
+    "group": "delay_mismatch",
+    "route": "tight_s",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0162",
+    "group": "delay_mismatch",
+    "route": "tight_s",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 1.0,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0163",
+    "group": "delay_mismatch",
+    "route": "tight_s",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 1.2000000000000002,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0164",
+    "group": "model_mismatch",
+    "route": "tight_s",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 0.7
+  },
+  {
+    "case_id": "case_0165",
+    "group": "model_mismatch",
+    "route": "tight_s",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0166",
+    "group": "model_mismatch",
+    "route": "tight_s",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "tight_s"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.3
+  },
+  {
+    "case_id": "case_0167",
+    "group": "numerics",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "euler",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0168",
+    "group": "numerics",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "euler",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0169",
+    "group": "numerics",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0170",
+    "group": "numerics",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0171",
+    "group": "numerics",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 401,
+      "integrator": "euler",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0172",
+    "group": "numerics",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 401,
+      "integrator": "euler",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0173",
+    "group": "numerics",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 401,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0174",
+    "group": "numerics",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.02,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 401,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0175",
+    "group": "numerics",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.01,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "euler",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0176",
+    "group": "numerics",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.01,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "euler",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0177",
+    "group": "numerics",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.01,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0178",
+    "group": "numerics",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.01,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 201,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0179",
+    "group": "numerics",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.01,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 401,
+      "integrator": "euler",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0180",
+    "group": "numerics",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.01,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 401,
+      "integrator": "euler",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0181",
+    "group": "numerics",
+    "route": "s_curve",
+    "controller": "pp",
+    "config": {
+      "dt": 0.01,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 401,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  },
+  {
+    "case_id": "case_0182",
+    "group": "numerics",
+    "route": "s_curve",
+    "controller": "predictor",
+    "config": {
+      "dt": 0.01,
+      "speed": 1.0,
+      "wheelbase": 0.5,
+      "lookahead": 1.0,
+      "max_steer_deg": 35.0,
+      "initial_lateral_offset": 0.5,
+      "max_time": 60.0,
+      "goal_tolerance": 0.3,
+      "evaluation_distance_m": 15.0,
+      "route_samples": 401,
+      "integrator": "exact",
+      "routes": [
+        "s_curve"
+      ],
+      "delays": [
+        0.8
+      ]
+    },
+    "delay_s": 0.8,
+    "estimated_delay_s": 0.8,
+    "model_scale": 1.0
+  }
+]
