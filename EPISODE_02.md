@@ -1,5 +1,9 @@
 # 第二期：别追过头了——太空追星实验
 
+[三期项目总览](https://flessnerchernosky-ops.github.io/robot-delay-lab/showcase.html?lang=zh)
+
+[中文](EPISODE_02.md) · [English](EPISODE_02.en.md)
+
 **不需要先学自动化、控制理论或编程。** 这一期把上一期的小车换成会滑行的飞船：你只要回答一个问题——“我该继续往前推，还是开始刹车？”
 
 **[打开互动实验](https://flessnerchernosky-ops.github.io/robot-delay-lab/)** · [查看实验数据](examples/star_chase_summary.csv) · [回到机器人研究篇](README.md)
@@ -78,7 +82,7 @@
 
 ## 下载后离线玩
 
-在仓库点 **Code → Download ZIP**，解压后双击 `docs/index.html`，即可在现代浏览器离线玩。请一起保留同目录的 `engine.js`、`notebook.js`、`app.js` 和 `style.css`。GitHub 的代码预览页只展示源文件，不会直接运行 HTML；使用上面的互动实验链接或离线打开。
+在仓库点 **Code → Download ZIP**，解压后双击 `docs/index.html`，即可在现代浏览器离线玩。请一起保留同目录的 `engine.js`、`notebook.js`、`i18n.js`、`app.js` 和 `style.css`。GitHub 的代码预览页只展示源文件，不会直接运行 HTML；使用上面的互动实验链接或离线打开。
 
 如果你会一点 Node.js，还可以独立重复检查和数据：
 

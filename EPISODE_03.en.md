@@ -1,5 +1,7 @@
 # Episode 3: Catch the Stars
 
+[Explore all episodes](https://flessnerchernosky-ops.github.io/robot-delay-lab/showcase.html?lang=en)
+
 [中文](EPISODE_03.zh-CN.md) · [English](EPISODE_03.en.md)
 
 **[Play in English](https://flessnerchernosky-ops.github.io/robot-delay-lab/arm/?lang=en)** · [中文试玩](https://flessnerchernosky-ops.github.io/robot-delay-lab/arm/)

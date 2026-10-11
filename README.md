@@ -1,41 +1,60 @@
-# Robot Delay Lab
+# Robot Delay Lab · 亲手理解控制
 
 [中文](README.md) · [English](README.en.md)
 
-## 第三期 · 机械臂抓星星
+**为什么越努力纠正，反而越容易追过头？** 用小车、飞船和机械臂，探索反馈、延迟、预测与可达范围。
 
-**[在线试玩：机械臂抓星星 / Catch the Stars](https://flessnerchernosky-ops.github.io/robot-delay-lab/arm/)**——打开浏览器，让两种策略抓同一颗星星：只追位置的 P，以及会根据速度刹车的 PD。五个挑战包括够得着吗、抓过头了、指令来晚了、关节卡住了和移动目标。无需硬件或安装，界面支持中文 / English。
+**[打开三期项目总览 →](https://flessnerchernosky-ops.github.io/robot-delay-lab/showcase.html?lang=zh)** · [太空追星试玩](https://flessnerchernosky-ops.github.io/robot-delay-lab/?lang=zh) · [机械臂试玩](https://flessnerchernosky-ops.github.io/robot-delay-lab/arm/?lang=zh)
 
-可拖动目标、调整参数、下载完整 CSV、保存自己的实验笔记，并检查两局是否只改变了一个变量。项目提供 31 组配置条目（含重复基线）、62 条确定性轨迹的成绩与设置快照；15 项模型检查及 Python 独立离散线性系统校验。
+![Robot Delay Lab 三期项目](docs/media/social-preview.png)
 
-[中文模型与复现说明](EPISODE_03.zh-CN.md) · [English model and reproduction guide](EPISODE_03.en.md) · [实验成绩](examples/arm/summary.csv) · [模型源码](docs/arm/engine.js)
+两款浏览器实验无需硬件、安装或控制理论基础，支持中英文与手机；第一期用 Python 复现研究。页面无追踪与实验数据上传，代码使用 MIT 许可。
 
-这是一种独立关节伺服教学模型，未包含重力、关节耦合、碰撞、抓手或实物验证。结果用于理解与对照实验，不能直接用于真实机械臂。
+| 选择一个问题 | 你可以做什么 | 开始 |
+|---|---|---|
+| ① 小车能沿路线走稳吗？ | 比较 Pure Pursuit 与预测状态控制，研究延迟、模型误差和局部稳定性 | [中文指南](EPISODE_01.zh-CN.md) / [English](EPISODE_01.en.md) |
+| ② 为什么越追星星，越容易晃？ | 调延迟与刹车，亲自驾驶，观察预测失败的场景 | [直接试玩](https://flessnerchernosky-ops.github.io/robot-delay-lab/?lang=zh) / [指南](EPISODE_02.md) |
+| ③ 星星就在眼前，为什么抓不住？ | 拖动目标，比较 P / PD，探索关节限制与可达范围 | [直接试玩](https://flessnerchernosky-ops.github.io/robot-delay-lab/arm/?lang=zh) / [指南](EPISODE_03.zh-CN.md) |
 
-![机械臂双语互动实验](docs/arm/preview.jpg)
+## ① 小车路径跟踪 · 预测一定更好吗？
 
+![同一路线、同一延迟的控制器对比](docs/media/path-tracking.gif)
 
-## 第二期 · 零基础也能玩
+从二维运动学自行车模型开始，比较普通 Pure Pursuit 与基于命令历史的预测状态控制。v0.2 提供 **182 条确定性轨迹、16 项 Python 检查**，覆盖 5 条路线、3 个速度、模型与延迟估计误差及离散化诊断。
 
-新增 [15 分钟学习路线](LEARNING_MISSIONS.md) 与页面内的实验笔记本：保存完整一局的成绩、比较只改一个变量的结果、下载自己填写的 Markdown 笔记。
+主要发现：预测并非在所有条件下都降低误差。动画只是 S 形路线、1 m/s、0.5 秒延迟的一例；[完整结果](REPORT_V02.md)保留改善与退化，[局部稳定性说明](THEORY.md)给出假设与推导。
 
-**[别追过头了：太空追星实验](https://flessnerchernosky-ops.github.io/robot-delay-lab/)**——把小车换成会滑行的飞船，亲手体验反馈、延迟和预测。五个关卡、手动驾驶、偏差曲线和 CSV 下载，不需要控制理论基础，也不需要安装软件。
+[中文快速复现](EPISODE_01.zh-CN.md) · [English guide](EPISODE_01.en.md) · [源码](study.py) · [配对成绩](results_v02/paired_comparison.csv)
 
-[完整玩法与实验记录](EPISODE_02.md) · [互动页面源码](docs/) · 下载 ZIP 后也可双击 `docs/index.html` 离线玩。
+## ② 太空追星 · 别追过头了
 
-![零基础互动实验](docs/preview.jpg)
+![三艘飞船在指令延迟下追同一目标](docs/media/star-chase.gif)
 
-## 第一期 · 机器人研究篇
+**三艘飞船，五个场景，20 秒一局。** 体验立即反应、延迟反应和预测反应，尝试手动驾驶，查看偏差曲线并下载 CSV。预测只估计未来，不偷看未来；快速折返提供预测更差的反例。
 
-研究问题：转向指令存在延迟时，Pure Pursuit 控制器何时出现振荡？基于命令历史的预测补偿在什么条件下有利，付出什么代价？
+中英界面、[15 分钟学习路线](LEARNING_MISSIONS.md)和实验笔记本帮助你写猜测、完成实验、检查单变量对照。笔记最多 12 条，刷新页面会清空，请及时下载。
 
-这是一个面向本科阶段的机器人控制实验起点。用二维运动学自行车模型，比较直线、S 形和圆弧路线，在固定参数下的延迟响应。核心仿真只需要 Python 3.10 或更新版本，没有硬件要求。
+[中文试玩](https://flessnerchernosky-ops.github.io/robot-delay-lab/?lang=zh) · [English demo](https://flessnerchernosky-ops.github.io/robot-delay-lab/?lang=en) · [中文指南](EPISODE_02.md) · [English guide](EPISODE_02.en.md) · [源码](docs/engine.js)
 
-**当前版本：v0.2，预测补偿对照、参数敏感性及局部稳定性分析。** 本轮已有 182 条确定性仿真轨迹和 16 项自动检查，包含 5 条路线、3 个速度、模型/延迟估计误差和离散化诊断。原始 v0.1 的 12 组结果保留在 `results/`。尚未加入 MPC、随机噪声或实物验证。
+## ③ 机械臂抓星星 · 学会靠近，也学会停下
 
-本轮核心发现是“预测补偿并非处处降低误差”。具体改善、退化和分析边界见 [v0.2 实验报告](REPORT_V02.md)，理论推导见 [局部稳定性说明](THEORY.md)。这些是学习与研究成果，尚未确认算法新颖性。
+![同一目标下的位置控制与制动反馈](docs/media/catch-the-stars.gif)
 
-![两种控制器对比](results_v02/comparison_demo.gif)
+**两根连杆，两种策略，12 秒一局。** 五个挑战展示可达范围、过冲、指令延迟、关节限制与移动目标。拖动星星、调整参数，比较 P 与 PD，并导出完整数据和个人笔记。
+
+附有 **31 组配置条目（含重复基线）、62 条确定性轨迹**，15 项模型检查及 Python 独立离散线性系统校验。更强的制动或预测不保证在所有场景中更好。
+
+[中文试玩](https://flessnerchernosky-ops.github.io/robot-delay-lab/arm/?lang=zh) · [English demo](https://flessnerchernosky-ops.github.io/robot-delay-lab/arm/?lang=en) · [中文指南](EPISODE_03.zh-CN.md) · [English guide](EPISODE_03.en.md) · [源码](docs/arm/engine.js)
+
+## 把试玩变成自己的实验
+
+先写一个问题与猜测，保持目标不变、一次只改变一个参数，跑完整局，再下载数据和笔记。确定性重复不是独立随机实验；拖动目标属于自由试玩，不能冒充同条件的参数对照。
+
+**研究边界：** 三期均为简化教学与研究模型，没有真实硬件验证或新的控制算法声明。第一期未模拟感知噪声与轮胎侧滑；第二期是虚构的一维飞船；第三期未包含重力、关节耦合、碰撞或抓手。详细假设见各期指南。
+
+觉得有用？欢迎 **Star 收藏**。发现问题或希望贡献，见 [双语贡献指南](CONTRIBUTING.md)。分享项目可使用 [中英文介绍与素材](SHARING.md)。本项目由 AI 协助制作；请区分预设示例与你亲自完成的实验。
+
+---
 
 ## 运行 v0.2 研究
 

@@ -1,55 +1,62 @@
-# Robot Delay Lab
+# Robot Delay Lab · Play with control
 
 [中文](README.md) · [English](README.en.md)
 
-Hardware-free robotics experiments, from reproducible Python studies to beginner-friendly browser playgrounds. MIT licensed and AI-assisted. These are educational models, without hardware validation or a claim of algorithmic novelty.
+**Why can trying harder make you overshoot?** Explore feedback, delay, prediction and reachability with a robot car, spacecraft and arm.
 
-## Episode 3: Catch the Stars
+**[Explore all three episodes →](https://flessnerchernosky-ops.github.io/robot-delay-lab/showcase.html?lang=en)** · [Star Chase](https://flessnerchernosky-ops.github.io/robot-delay-lab/?lang=en) · [Catch the Stars](https://flessnerchernosky-ops.github.io/robot-delay-lab/arm/?lang=en)
 
-**[Play in English](https://flessnerchernosky-ops.github.io/robot-delay-lab/arm/?lang=en)** · [中文试玩](https://flessnerchernosky-ops.github.io/robot-delay-lab/arm/)
+![Three experiments in Robot Delay Lab](docs/media/social-preview.png)
 
-Two robot arms pursue the same star: position-only feedback (P), and position plus velocity feedback (PD). Five challenges explore reachability, overshooting, delayed commands, joint limits and moving targets. No hardware or installation; the interface switches between Chinese and English.
+Two mobile-friendly, bilingual browser playgrounds require no hardware, installation or control-theory background. Episode 1 is a reproducible Python study. Pages contain no tracking or experiment uploads. MIT licensed.
 
-Drag targets, tune parameters, download full CSV trajectories, save your own experiment notes, and check single-variable comparisons. Included: 31 configuration entries (with repeated baselines), 62 deterministic trajectories, 15 model checks, and an independent Python sampled-linear-system verification.
+| Pick a question | Explore | Start |
+|---|---|---|
+| ① Can a robot follow its route? | Pure Pursuit vs predicted-state control, delay sensitivity and local stability | [English guide](EPISODE_01.en.md) / [中文](EPISODE_01.zh-CN.md) |
+| ② Why does chasing harder make you wobble? | Command delay, braking, manual flight and failed prediction | [Play now](https://flessnerchernosky-ops.github.io/robot-delay-lab/?lang=en) / [Guide](EPISODE_02.en.md) |
+| ③ It looks close. Why can’t the arm catch it? | Drag targets, compare P / PD, explore joint limits and reachability | [Play now](https://flessnerchernosky-ops.github.io/robot-delay-lab/arm/?lang=en) / [Guide](EPISODE_03.en.md) |
 
-[English model and reproduction guide](EPISODE_03.en.md) · [中文说明](EPISODE_03.zh-CN.md) · [Benchmark scores](examples/arm/summary.csv) · [Model source](docs/arm/engine.js)
+## ① Robot path tracking · Is prediction always better?
 
-This is a two-link, independent-servo teaching model. It omits gravity, joint coupling, collisions, grippers and contact. Results cannot be directly applied to real robot arms.
+![Controller comparison on the same delayed route](docs/media/path-tracking.gif)
 
-![Catch the Stars browser playground](docs/arm/preview.jpg)
+Compare ordinary Pure Pursuit and command-history predicted-state control in a two-dimensional kinematic bicycle model. v0.2 includes **182 deterministic trajectories and 16 Python checks**, five routes, three speeds, model/delay estimation errors and discretization diagnostics.
 
-From the repository root, using Node.js and Python 3.10+:
+Prediction does not improve every condition. The animation is one S-curve case at 1 m/s with 0.5 s delay. The [detailed report, Chinese](REPORT_V02.md) retains improvements and regressions; [local stability analysis, Chinese](THEORY.md) states the derivation and assumptions.
 
-```text
-node checks/arm.cjs
-python verify_arm.py
-node checks/arm_examples.cjs
-```
+[English reproduction guide](EPISODE_01.en.md) · [中文指南](EPISODE_01.zh-CN.md) · [Source](study.py) · [Paired scores](results_v02/paired_comparison.csv)
 
-Open `docs/arm/index.html` for offline play. No external fonts, scripts, backend or experiment uploads. Notes stay in the current page and are cleared on refresh; download them before leaving.
+## ② Star Chase · Don’t overshoot
 
-## Episode 2: Star Chase Lab
+![Three spacecraft pursue one target with delayed commands](docs/media/star-chase.gif)
 
-**[Play Star Chase](https://flessnerchernosky-ops.github.io/robot-delay-lab/)** — a fictional sliding spacecraft makes feedback, command delay and prediction visible. Five presets, manual driving, error curves, CSV export and a completed-run notebook. The earlier interface and its learning materials are currently in Chinese.
+**Three spacecraft, five scenarios, 20 seconds per run.** Compare instant, delayed and predictive responses; fly manually, inspect error curves and export CSV. Prediction estimates future states without seeing future targets. Fast reversals provide a counterexample where prediction is worse.
 
-[Episode 2 guide, Chinese](EPISODE_02.md) · [15-minute learning path, Chinese](LEARNING_MISSIONS.md) · [Browser source](docs/)
+Chinese/English UI, a [15-minute learning path](LEARNING_MISSIONS.en.md) and a notebook help you write a hypothesis, finish a run and check controlled comparisons. Up to 12 notes stay in the page; refreshing clears them, so download before leaving.
 
-Open `docs/index.html` offline. The one-dimensional spacecraft has limited propulsion, drag and queued commands. Prediction uses current velocity and pending inputs, assumes short-term target velocity, and can fail when the target changes suddenly. The zero-delay controller is a reference; it does not share the delayed controllers’ input timing.
+[Play in English](https://flessnerchernosky-ops.github.io/robot-delay-lab/?lang=en) · [中文试玩](https://flessnerchernosky-ops.github.io/robot-delay-lab/?lang=zh) · [English guide](EPISODE_02.en.md) · [中文指南](EPISODE_02.md) · [Source](docs/engine.js)
 
-```text
-node checks/star_lab.cjs
-node checks/notebook.cjs
-```
+## ③ Catch the Stars · Approach, then stop
 
-## Episode 1: Robot path-tracking study
+![Position-only and position-plus-braking robot arms](docs/media/catch-the-stars.gif)
 
-Research question: when does Pure Pursuit oscillate with steering-command delay, and when does command-history prediction help or hurt?
+**Two links, two strategies, 12 seconds per run.** Five challenges explore reachability, overshoot, delayed commands, joint limits and moving targets. Drag the star, tune parameters, compare P and PD, and download full trajectories and personal notes.
 
-Version 0.2 compares ordinary and predicted-state Pure Pursuit with a two-dimensional kinematic bicycle model. It includes 182 deterministic trajectories, 16 Python checks, five routes, three speeds, model/delay estimation errors, discretization diagnostics and local stability analysis. The original v0.1 results remain in `results/`. No MPC, stochastic noise or hardware experiments are included.
+Includes **31 configuration entries (with repeated baselines), 62 deterministic trajectories**, 15 model checks and independent Python sampled-linear-system verification. Stronger braking or prediction does not guarantee better performance in every scenario.
 
-The principal finding is that prediction does not improve every condition. [v0.2 report](REPORT_V02.md) and [local stability analysis](THEORY.md) contain the results and assumptions; these detailed earlier documents are in Chinese.
+[Play in English](https://flessnerchernosky-ops.github.io/robot-delay-lab/arm/?lang=en) · [中文试玩](https://flessnerchernosky-ops.github.io/robot-delay-lab/arm/?lang=zh) · [English guide](EPISODE_03.en.md) · [中文指南](EPISODE_03.zh-CN.md) · [Source](docs/arm/engine.js)
 
-![Controller comparison](results_v02/comparison_demo.gif)
+## Make the experiment yours
+
+Write a question and hypothesis, hold the target fixed, change one parameter, finish a full run, then download data and notes. Deterministic repeats are not independent random trials. Dragged targets are free play, not controlled parameter comparisons.
+
+**Research limits:** simplified teaching and study models without real hardware validation or claims of new control algorithms. Episode 1 omits perception noise and tire slip; Episode 2 is a fictional one-dimensional spacecraft; Episode 3 omits gravity, joint coupling, collisions and grippers. See each guide for assumptions.
+
+Found it useful? **Star the repository** to keep it handy. Report problems or contribute through the [bilingual contribution guide](CONTRIBUTING.md). [Sharing text and media](SHARING.md) are available in both languages. AI-assisted: distinguish presets from experiments you personally performed.
+
+---
+
+## Detailed reproduction notes for Episode 1
 
 ### Reproduce v0.2
 

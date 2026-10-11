@@ -1,5 +1,7 @@
 # 第三期：机械臂抓星星
 
+[三期项目总览](https://flessnerchernosky-ops.github.io/robot-delay-lab/showcase.html?lang=zh)
+
 [中文](EPISODE_03.zh-CN.md) · [English](EPISODE_03.en.md)
 
 **[在线试玩](https://flessnerchernosky-ops.github.io/robot-delay-lab/arm/)** · [English demo](https://flessnerchernosky-ops.github.io/robot-delay-lab/arm/?lang=en)
