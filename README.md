@@ -16,6 +16,13 @@
 | ② 为什么越追星星，越容易晃？ | 调延迟与刹车，亲自驾驶，观察预测失败的场景 | [直接试玩](https://flessnerchernosky-ops.github.io/robot-delay-lab/?lang=zh) / [指南](EPISODE_02.md) |
 | ③ 星星就在眼前，为什么抓不住？ | 拖动目标，比较 P / PD，探索关节限制与可达范围 | [直接试玩](https://flessnerchernosky-ops.github.io/robot-delay-lab/arm/?lang=zh) / [指南](EPISODE_03.zh-CN.md) |
 
+## 独立项目：具身交互与无人机
+
+这两个方向各有自己的仓库、实验数据和双语试玩入口：
+
+- [Embodied Reach Lab](https://github.com/flessnerchernosky-ops/embodied-reach-lab) · [像素 → 感知 → 动作 / Pixel-to-action demo](https://flessnerchernosky-ops.github.io/embodied-reach-lab/?lang=zh)
+- [Drone Hover Lab](https://github.com/flessnerchernosky-ops/drone-hover-lab) · [风扰 → 悬停控制 / Wind-to-hover demo](https://flessnerchernosky-ops.github.io/drone-hover-lab/?lang=zh)
+
 ## ① 小车路径跟踪 · 预测一定更好吗？
 
 ![同一路线、同一延迟的控制器对比](docs/media/path-tracking.gif)

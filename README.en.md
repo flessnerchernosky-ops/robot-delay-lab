@@ -16,6 +16,13 @@ Two mobile-friendly, bilingual browser playgrounds require no hardware, installa
 | ② Why does chasing harder make you wobble? | Command delay, braking, manual flight and failed prediction | [Play now](https://flessnerchernosky-ops.github.io/robot-delay-lab/?lang=en) / [Guide](EPISODE_02.en.md) |
 | ③ It looks close. Why can’t the arm catch it? | Drag targets, compare P / PD, explore joint limits and reachability | [Play now](https://flessnerchernosky-ops.github.io/robot-delay-lab/arm/?lang=en) / [Guide](EPISODE_03.en.md) |
 
+## Independent projects: embodied interaction and drones
+
+Each direction has its own repository, experiment data and bilingual playground:
+
+- [Embodied Reach Lab](https://github.com/flessnerchernosky-ops/embodied-reach-lab) · [像素 → 感知 → 动作 / Pixel-to-action demo](https://flessnerchernosky-ops.github.io/embodied-reach-lab/?lang=en)
+- [Drone Hover Lab](https://github.com/flessnerchernosky-ops/drone-hover-lab) · [风扰 → 悬停控制 / Wind-to-hover demo](https://flessnerchernosky-ops.github.io/drone-hover-lab/?lang=en)
+
 ## ① Robot path tracking · Is prediction always better?
 
 ![Controller comparison on the same delayed route](docs/media/path-tracking.gif)
