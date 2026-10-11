@@ -1,0 +1,18 @@
+{
+  "path": {
+    "route": "s_curve",
+    "speed_m_s": 1,
+    "delay_s": 0.5,
+    "lookahead_m": 1,
+    "source_cases": [
+      "case_0037",
+      "case_0038"
+    ],
+    "display_duration_s": 15
+  },
+  "star_preset": "chaos",
+  "arm_preset": "overshoot",
+  "frame_interval_s": 0.1,
+  "gif_duration_ms": 100,
+  "note": "Recorded model output; not hardware footage. Font rendering may vary by platform."
+}
