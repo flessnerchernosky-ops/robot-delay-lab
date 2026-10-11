@@ -3,7 +3,8 @@
   const E = window.StarLab, $ = id => document.getElementById(id);
   const colors = ['#5cddd6','#ff9780','#b7a3ff','#f2ce7e'];
   const labels = ['立即反应','有延迟','预测反应','你来驾驶'];
-  const presets = E.presets;
+  const presets = E.presets, I = window.StarI18n, tx = value => I.text(value), messages = new Map();
+  const put = (id,value) => {messages.set(id,value);$(id).textContent=tx(value);};
   const N = window.StarNotebook, notebook = [];
   let runSaved=false;
   let run, paused=false, previousTime=null, accumulator=0, dragTarget=1.2;
@@ -11,9 +12,9 @@
   const settings = () => ({delay:Number($('delay').value),gain:Number($('gain').value),
     damping:Number($('damping').value),motion:$('motion').value,manual:$('manual').checked});
   function refreshControls() {
-    $('delay-value').textContent = `${run.delay.toFixed(2)} 秒`;
-    $('gain-value').textContent = run.settings.gain.toFixed(1);
-    $('damping-value').textContent = run.settings.damping.toFixed(2);
+    $('delay-value').textContent =tx(`${run.delay.toFixed(2)} 秒`);
+    $('gain-value').textContent =tx(run.settings.gain.toFixed(1));
+    $('damping-value').textContent =tx(run.settings.damping.toFixed(2));
     $('manual-controls').hidden = !run.settings.manual;
     document.querySelectorAll('[data-preset]').forEach(button => {
       const selected = button.dataset.preset === activePreset;
@@ -24,28 +25,28 @@
     run = new E.Experiment(settings()); paused=false; previousTime=null; accumulator=0;
     runSaved=false;
     dragTarget=1.2; target={x:1.2,v:0}; keys.clear(); buttons.clear();
-    $('pause').textContent='暂停'; $('pause').disabled=false;
-    $('download-state').textContent='记录保存在你的设备，页面不上传数据。';
+    put('pause','暂停'); $('pause').disabled=false;
+    put('download-state','记录保存在你的设备，页面不上传数据。');
     refreshControls(); updateScores(); draw();
   }
   function applyPreset(name) {
     activePreset=name; const preset=presets[name];
     ['delay','gain','damping','motion'].forEach(id => $(id).value=preset[id]);
-    $('mission-copy').textContent=preset.text; restart();
+    put('mission-copy',preset.text); restart();
   }
   document.querySelectorAll('[data-preset]').forEach(button =>
     button.addEventListener('click',()=>applyPreset(button.dataset.preset)));
   ['delay','gain','damping','motion','manual'].forEach(id => $(id).addEventListener('change',()=>{
-    activePreset=null; $('mission-copy').textContent='自选实验：保持其他设置不变，一次只改一个变量。'; restart();
+    activePreset=null; put('mission-copy','自选实验：保持其他设置不变，一次只改一个变量。'); restart();
   }));
   ['delay','gain','damping'].forEach(id => $(id).addEventListener('input',()=>{
     const value=Number($(id).value);
-    $(id+'-value').textContent=id==='delay'?`${value.toFixed(2)} 秒`:value.toFixed(id==='gain'?1:2);
+    $(id+'-value').textContent=tx(id==='delay'?`${value.toFixed(2)} 秒`:value.toFixed(id==='gain'?1:2));
   }));
   $('restart').addEventListener('click',restart);
   $('pause').addEventListener('click',()=>{
     paused=!paused; previousTime=null; accumulator=0;
-    $('pause').textContent=paused?'继续':'暂停'; updateScores();
+    put('pause',paused?'继续':'暂停'); updateScores();
   });
   function pilotInput() {
     const left = keys.has('a')||keys.has('arrowleft')||buttons.has('left');
@@ -72,18 +73,18 @@
   window.addEventListener('keyup',event=>keys.delete(event.key.toLowerCase()));
   window.addEventListener('blur',()=>{
     keys.clear();buttons.clear();document.querySelectorAll('.pilot-buttons button').forEach(b=>b.classList.remove('active'));
-    if (!paused && run.time < 20) {paused=true;$('pause').textContent='继续';updateScores();}
+    if (!paused && run.time < 20) {paused=true;put('pause','继续');updateScores();}
   });
   function starAt(time) {
     return run.settings.motion === 'drag' ? {x:dragTarget,v:0} : E.targetAt(time,run.settings.motion);
   }
   function drag(event) {
     const rect=$('space').getBoundingClientRect();
-    const width=rect.width, left=85, right=width-24;
+    const width=rect.width, left=I.language==='en'?140:85, right=width-24;
     dragTarget=E.clamp(((event.clientX-rect.left-left)/(right-left))*8-4,-3,3);
     if ($('motion').value !== 'drag') {
       $('motion').value='drag'; run.settings.motion='drag';activePreset=null;
-      $('mission-copy').textContent='星星由你拖动。突然换位置时，飞船仍需要时间调整。';refreshControls();
+      put('mission-copy','星星由你拖动。突然换位置时，飞船仍需要时间调整。');refreshControls();
     }
     target={x:dragTarget,v:0};
     // A dragged target is a new position command, not a noisy velocity estimate.
@@ -113,22 +114,22 @@
     }ctx.closePath();ctx.fillStyle='#f2ce7e';ctx.fill();
   }
   function drawSpace() {
-    const {ctx,w,h}=surface('space'),left=85,right=w-24,span=right-left;
+    const {ctx,w,h}=surface('space'),left=I.language==='en'?140:85,right=w-24,span=right-left;
     const x=value=>left+(value+4)/8*span;
     for(let i=0;i<50;i++) {ctx.fillStyle=i%5?'#31415b':'#677b97';ctx.fillRect((i*137+31)%w,(i*71+21)%h,1.2,1.2);}
     const n=run.settings.manual?4:3,spacing=(h-45)/n;
     for(let j=0;j<n;j++){
       const y=38+spacing*(j+0.5),ship=run.ships[j],position=ship.state.x;
       ctx.strokeStyle='#29374c';ctx.setLineDash([4,7]);ctx.beginPath();ctx.moveTo(left,y);ctx.lineTo(right,y);ctx.stroke();ctx.setLineDash([]);
-      ctx.fillStyle=colors[j];ctx.fillText(labels[j],14,y-15);ctx.fillStyle='#92a3bc';ctx.font='10px system-ui';
-      ctx.fillText(j===0?'无等待':`等待 ${run.delay.toFixed(2)} s`,14,y+3);ctx.font='12px system-ui';
-      const sx=x(E.clamp(position,-4,4)),tx=x(target.x);
-      ctx.strokeStyle=colors[j]+'70';ctx.beginPath();ctx.moveTo(sx,y);ctx.lineTo(tx,y);ctx.stroke();
-      star(ctx,tx,y);
+      ctx.fillStyle=colors[j];ctx.fillText(tx(labels[j]),14,y-15);ctx.fillStyle='#92a3bc';ctx.font='10px system-ui';
+      ctx.fillText(tx(j===0?'无等待':`等待 ${run.delay.toFixed(2)} s`),14,y+3);ctx.font='12px system-ui';
+      const sx=x(E.clamp(position,-4,4)),starX=x(target.x);
+      ctx.strokeStyle=colors[j]+'70';ctx.beginPath();ctx.moveTo(sx,y);ctx.lineTo(starX,y);ctx.stroke();
+      star(ctx,starX,y);
       ctx.save();ctx.translate(sx,y);const direction=ship.state.v>=0?1:-1;ctx.scale(direction,1);
       if(Math.abs(ship.applied)>0.1){ctx.fillStyle='#f2ce7e';ctx.beginPath();ctx.moveTo(-12,-4);ctx.lineTo(-18-Math.min(10,Math.abs(ship.applied)),0);ctx.lineTo(-12,4);ctx.fill();}
       ctx.fillStyle=colors[j];ctx.beginPath();ctx.moveTo(15,0);ctx.lineTo(-11,-8);ctx.lineTo(-6,0);ctx.lineTo(-11,8);ctx.closePath();ctx.fill();ctx.restore();
-      if(Math.abs(position)>4){ctx.fillStyle=colors[j];ctx.textAlign=position>0?'right':'left';ctx.fillText(`飞出画面 ${position.toFixed(1)}`,position>0?right:left,y-20);ctx.textAlign='left';}
+      if(Math.abs(position)>4){ctx.fillStyle=colors[j];ctx.textAlign=position>0?'right':'left';ctx.fillText(tx(`飞出画面 ${position.toFixed(1)}`),position>0?right:left,y-20);ctx.textAlign='left';}
     }
     ctx.fillStyle='#92a3bc';ctx.font='10px system-ui';ctx.fillText('−4',left,h-8);ctx.textAlign='center';ctx.fillText('0',x(0),h-8);ctx.textAlign='right';ctx.fillText('+4',right,h-8);ctx.textAlign='left';
   }
@@ -147,33 +148,33 @@
       ctx.strokeStyle=colors[j];ctx.lineWidth=1.8;ctx.beginPath();
       rows.forEach((row,i)=>{const px=left+(row[0]-start)/duration*(right-left),py=y(row[8+j*4]-row[4]);if(i)ctx.lineTo(px,py);else ctx.moveTo(px,py);});ctx.stroke();
     }
-    ctx.lineWidth=1;ctx.fillStyle='#9cabbd';ctx.fillText(`${start.toFixed(0)} 秒`,left,h-6);ctx.textAlign='right';ctx.fillText(`${(start+duration).toFixed(0)} 秒`,right,h-6);ctx.textAlign='left';
+    ctx.lineWidth=1;ctx.fillStyle='#9cabbd';ctx.fillText(tx(`${start.toFixed(0)} 秒`),left,h-6);ctx.textAlign='right';ctx.fillText(tx(`${(start+duration).toFixed(0)} 秒`),right,h-6);ctx.textAlign='left';
   }
   function draw(){drawSpace();drawChart();}
   function updateScores() {
     ['instant','delayed','predictor','manual'].forEach((name,i)=>$('score-'+name).textContent=run.ships[i].count?run.ships[i].rmse.toFixed(2):'—');
     const finished=run.time>=20;
     $('save-run').disabled=!finished||runSaved||notebook.length>=12;
-    $('save-run').textContent=runSaved?'本局成绩已保存':notebook.length>=12?'已保存 12 条，请下载笔记':finished?'保存本局成绩':'跑完 20 秒后保存成绩';
-    $('run-state').textContent=finished?'本局完成':paused?'已暂停':'飞行中';
-    $('timer').textContent=`${run.time.toFixed(1)} / 20 秒`;
+    put('save-run',runSaved?'本局成绩已保存':notebook.length>=12?'已保存 12 条，请下载笔记':finished?'保存本局成绩':'跑完 20 秒后保存成绩');
+    put('run-state',finished?'本局完成':paused?'已暂停':'飞行中');
+    put('timer',`${run.time.toFixed(1)} / 20 秒`);
     if(finished){$('pause').disabled=true;
       const delayed=run.ships[1].rmse,predicted=run.ships[2].rmse;
-      $('observation').textContent=run.delay===0?'延迟为零时，三个自动方法完全同步。这是理解模型的起点。':
-        `本局完成：有延迟 ${delayed.toFixed(2)}，预测 ${predicted.toFixed(2)}。${predicted<delayed?'这一次预测减少了典型偏离。':'这一次预测没有减少典型偏离。'}换一种目标运动再试；一局结果不代表所有场景。`;
-    }else $('observation').textContent='曲线在零线上下反复穿越，表示追过头又折回来。纵轴会自动缩放，请同时看数字。';
+      put('observation',run.delay===0?'延迟为零时，三个自动方法完全同步。这是理解模型的起点。':
+        `本局完成：有延迟 ${delayed.toFixed(2)}，预测 ${predicted.toFixed(2)}。${predicted<delayed?'这一次预测减少了典型偏离。':'这一次预测没有减少典型偏离。'}换一种目标运动再试；一局结果不代表所有场景。`);
+    }else put('observation','曲线在零线上下反复穿越，表示追过头又折回来。纵轴会自动缩放，请同时看数字。');
     $('left').classList.toggle('active',pilotInput()<0);$('right').classList.toggle('active',pilotInput()>0);
   }
   $('export').addEventListener('click',()=>{
-    if(!run.rows.length){$('download-state').textContent='先运行一点时间，再下载记录。';return;}
+    if(!run.rows.length){put('download-state','先运行一点时间，再下载记录。');return;}
     const csv=E.csvHeader.join(',')+'\n'+run.rows.map(row=>row.join(',')).join('\n')+'\n';
     const url=URL.createObjectURL(new Blob(['\ufeff'+csv],{type:'text/csv;charset=utf-8'}));
     const anchor=document.createElement('a');anchor.href=url;anchor.download='star-chase-experiment.csv';anchor.click();
     setTimeout(()=>URL.revokeObjectURL(url),1000);
-    $('download-state').textContent=`已下载 ${run.rows.length} 个采样点（${run.time.toFixed(1)} 秒），包含设置、目标和推进指令。`;
+    put('download-state',`已下载 ${run.rows.length} 个采样点（${run.time.toFixed(1)} 秒），包含设置、目标和推进指令。`);
   });
   function updateComparison() {
-    $('comparison').textContent=N.compare(notebook[Number($('compare-base').value)],notebook[Number($('compare-new').value)]).text;
+    put('comparison',N.compare(notebook[Number($('compare-base').value)],notebook[Number($('compare-new').value)]).text);
   }
   function renderNotebook() {
     $('notebook-results').hidden=!notebook.length;
@@ -185,11 +186,11 @@
       [`${index+1}${s.manual?' · 手动':''}`,N.motions[s.motion],
         `${s.delay.toFixed(2)} / ${s.gain.toFixed(1)} / ${s.damping.toFixed(2)}`,
         ...entry.scores.map(score=>score.toFixed(3))].forEach(value=>{
-          const cell=document.createElement('td');cell.textContent=value;row.append(cell);
+          const cell=document.createElement('td');cell.textContent=tx(value);row.append(cell);
         });
       $('notebook-rows').append(row);
       ['compare-base','compare-new'].forEach(id=>{
-        const option=document.createElement('option');option.value=index;option.textContent=`实验 ${index+1}`;$(id).append(option);
+        const option=document.createElement('option');option.value=index;option.textContent=tx(`实验 ${index+1}`);$(id).append(option);
       });
     });
     $('compare-base').value=Math.max(0,notebook.length-2);
@@ -201,15 +202,25 @@
     notebook.push(N.capture(run,{question:$('note-question').value,guess:$('note-guess').value,
       explanation:$('note-explanation').value}));runSaved=true;
     renderNotebook();updateScores();
-    $('notebook-state').textContent=`已保存实验 ${notebook.length}，含 20 秒完整成绩和你当前填写的笔记。新一局开始前，请更新猜测与解释；保存后这条笔记不会随输入框改变。`;
+    put('notebook-state',`已保存实验 ${notebook.length}，含 20 秒完整成绩和你当前填写的笔记。新一局开始前，请更新猜测与解释；保存后这条笔记不会随输入框改变。`);
   });
   ['compare-base','compare-new'].forEach(id=>$(id).addEventListener('change',updateComparison));
   $('download-notes').addEventListener('click',()=>{
     if(!notebook.length)return;
-    const url=URL.createObjectURL(new Blob([N.markdown(notebook)],{type:'text/markdown;charset=utf-8'}));
+    const url=URL.createObjectURL(new Blob([N.markdown(notebook,I.language)],{type:'text/markdown;charset=utf-8'}));
     const anchor=document.createElement('a');anchor.href=url;anchor.download='my-star-lab-notes.md';anchor.click();
     setTimeout(()=>URL.revokeObjectURL(url),1000);
-    $('notebook-state').textContent=`已下载 ${notebook.length} 条实验笔记。完整轨迹 CSV 请在对应那一局另行下载。`;
+    put('notebook-state',`已下载 ${notebook.length} 条实验笔记。完整轨迹 CSV 请在对应那一局另行下载。`);
+  });
+  window.addEventListener('starlanguagechange',()=>{
+    const base=$('compare-base').value,next=$('compare-new').value;
+    for(const [id,value] of messages)$(id).textContent=tx(value);
+    refreshControls();
+    put('mission-copy',activePreset?presets[activePreset].text:run.settings.motion==='drag'?
+      '星星由你拖动。突然换位置时，飞船仍需要时间调整。':'自选实验：保持其他设置不变，一次只改一个变量。');
+    put('pause',paused?'继续':'暂停');renderNotebook();
+    if(notebook.length){$('compare-base').value=base;$('compare-new').value=next;updateComparison();}
+    updateScores();draw();
   });
   window.addEventListener('resize',draw);
   function frame(now) {
@@ -221,5 +232,6 @@
     }
     updateScores();draw();requestAnimationFrame(frame);
   }
+  put('notebook-state',$('notebook-state').textContent);
   applyPreset('gentle');requestAnimationFrame(frame);
 })();

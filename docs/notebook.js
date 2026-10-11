@@ -25,7 +25,34 @@
     const setting=changed.length?`只改变${names[changed[0]]}：${a.settings[changed[0]]} → ${b.settings[changed[0]]}。`:'两局的设置相同，可检查重复运行是否一致。';
     return {eligible:true,changed,text:`${setting}有延迟飞船的典型偏离：${a.scores[1].toFixed(3)} → ${b.scores[1].toFixed(3)}（${change}）。这是当前模型、目标与 20 秒范围内的结果。`};
   }
-  function markdown(entries) {
+  function markdown(entries,language='zh') {
+    if(language==='en') {
+      const motionNames={fixed:'Fixed',wander:'Slow orbit',fast:'Fast reversals',drag:'Dragged manually'};
+      const lines=['# My Star Chase experiment notes','','Source: https://flessnerchernosky-ops.github.io/robot-delay-lab/?lang=en','',
+        'These are my own notes. Review and complete them before using them in a portfolio. Blank fields are not completed research.',
+        'Each complete run contains 2400 samples over 20 seconds. RMSE uses simulation units and includes the initial approach.',
+        'This model is deterministic, without hardware validation. Repeating settings is not an independent random experiment.',
+        'Only score summaries are saved here. Download each full trajectory as CSV separately.',''];
+      entries.forEach((entry,i)=>{const s=entry.settings;
+        lines.push(`## Run ${i+1}`,'',`Question: ${entry.question||'(to be filled)'}`,'',
+          `Hypothesis: ${entry.guess||'(to be filled before running)'}`,'',
+          `Settings: delay ${s.delay} s; gain ${s.gain}; braking ${s.damping}; target ${motionNames[s.motion]}; manual driving ${s.manual?'on':'off'}.`,'',
+          '| Instant | Delayed | Predictive |','|---:|---:|---:|',
+          `| ${entry.scores.map(score=>score.toFixed(6)).join(' | ')} |`,'',
+          `Explanation: ${entry.explanation||'(to be filled)'}`,'','Raw CSV filename: (enter the saved filename)','');
+      });
+      if(entries.length>=2){const a=entries.at(-2),b=entries.at(-1),result=compare(a,b);
+        lines.push('## Latest comparison','',result.eligible?
+          `Changed parameters: ${result.changed.join(', ')||'none (repeatability check)'}. Delayed RMSE: ${a.scores[1].toFixed(3)} → ${b.scores[1].toFixed(3)}. Applies only to these settings and this 20-second model run.`:
+          'Not a controlled comparison: choose different complete runs with the same automatic target, manual driving off and no more than one parameter changed.','');
+      }
+      lines.push('## Before sharing','',
+        '- Can I explain why the spacecraft keeps sliding after thrust stops?',
+        '- Have I distinguished my own runs from presets and AI-assisted work?',
+        '- Are my conclusions limited to the settings and model actually tested?',
+        '- What would I change next, and why?','');
+      return lines.join('\n');
+    }
     const lines=['# 我的太空追星实验记录','','来源：https://flessnerchernosky-ops.github.io/robot-delay-lab/',
       '','这是我填写的实验笔记；请核对、补充后再用于项目展示。空白处不代表已经完成个人研究。',
       '','每局从同一起点运行 20 秒，2400 个采样点；典型偏离为 RMSE（仿真单位），包含起步过程。',
