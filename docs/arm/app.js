@@ -2,6 +2,7 @@
 (()=>{
   const E=window.ArmLab,$=id=>document.getElementById(id),colors=['#ff9e99','#8de2c5'];
   const copy={
+    'all-episodes':['← 三期项目总览','← Explore all three episodes'],
     previous:['← 第二期：太空追星','← Episode 2: Star Chase'],eyebrow:['第三期 · 一颗星星，两种抓法','EPISODE 3 · ONE STAR, TWO STRATEGIES'],title:['机械臂抓星星','Catch the Stars'],intro:['看起来就在眼前，为什么抓不住？拖动星星，给机械臂一点延迟，看看它怎样学会停下来。','It looks close. Why can’t the arm catch it? Drag the star, add a command delay, and discover what it takes to stop in the right place.'],hero:['无需硬件 · 无需安装\n先动手，再理解控制','No hardware · No installation\nPlay first, understand control next'],choose:['选择一个挑战','Choose a challenge'],duration:['每局 12 秒','12 seconds per run'],arena:['同一颗星星，同一组限制','Same star. Same constraints.'],pause:['暂停','Pause'],resume:['继续','Resume'],restart:['重来 ↻','Restart ↻'],
     'p-name':['只追位置 · P','Position only · P'],'pd-name':['追位置，也刹车 · PD','Position + braking · PD'],'p-tag':['偏了就用力纠正','Push back when off target'],'pd-tag':['冲得快，就少用力','Brake when moving too fast'],error:['现在离星星','Distance now'],
     reach:['① 够得着吗','① Within reach?'],overshoot:['② 抓过头了','② Overshooting'],delay:['③ 指令来晚了','③ Late commands'],limits:['④ 关节卡住了','④ Joint limits'],orbit:['⑤ 星星也会走','⑤ Moving star'],
@@ -18,7 +19,7 @@
   const num=(n,d=3)=>n===null?'—':Number(n).toFixed(d);
   function getSettings(){return {kp:+$('kp').value,kd:+$('kd').value,delay:+$('delay').value,speed:+$('speed').value,limited:$('limited').checked,motion:$('motion').value,target:{x:+$('target-x').value,y:+$('target-y').value}};}
   function values(){for(const k of ['kp','kd','delay','speed'])$(k+'-value').textContent=num(+$(k).value,k==='kp'?0:k==='delay'?2:1)+(k==='delay'?' s':k==='speed'?' rad/s':'');}
-  function text(){document.documentElement.lang=lang?'en':'zh-CN';document.title=t('title')+' · Robot Control Playground';document.querySelectorAll('[data-t]').forEach(el=>el.textContent=t(el.dataset.t));$('finding').placeholder=t('placeholder');$('zh').setAttribute('aria-pressed',String(!lang));$('en').setAttribute('aria-pressed',String(Boolean(lang)));
+  function text(){$('all-episodes').href='../showcase.html?lang='+(lang?'en':'zh');document.querySelector('[data-t="previous"]').href='../?lang='+(lang?'en':'zh');document.documentElement.lang=lang?'en':'zh-CN';document.title=t('title')+' · Robot Control Playground';document.querySelectorAll('[data-t]').forEach(el=>el.textContent=t(el.dataset.t));$('finding').placeholder=t('placeholder');$('zh').setAttribute('aria-pressed',String(!lang));$('en').setAttribute('aria-pressed',String(Boolean(lang)));
     document.querySelectorAll('[data-preset]').forEach(b=>{b.textContent=t(b.dataset.preset);b.setAttribute('aria-pressed',String(selected&&scenario===b.dataset.preset));});$('mission-copy').textContent=t(scenario==='limits'?'limits-copy-mission':scenario+'-copy');$('guide').href=`https://github.com/flessnerchernosky-ops/robot-delay-lab/blob/main/EPISODE_03.${lang?'en':'zh-CN'}.md`;
     $('arm-p').setAttribute('aria-label',t('canvasP'));$('arm-pd').setAttribute('aria-label',t('canvasPD'));values();notes();$('download-state').textContent=t(downloadState);update();draw();}
   function restart(){run=new E.Experiment(getSettings());paused=false;previous=null;accumulator=0;downloadState='ready';text();}

@@ -4,10 +4,14 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Catch the Stars: a bilingual, hardware-free robot arm playground. Explore feedback, damping, delay and joint limits in your browser.">
   <title>机械臂抓星星 · Catch the Stars</title><link rel="stylesheet" href="style.css">
+  <meta property="og:title" content="Catch the Stars · Robot Delay Lab">
+  <meta property="og:description" content="It looks close. Why can’t the arm catch it? Explore feedback, delay and reachability in a bilingual browser playground.">
+  <meta property="og:image" content="https://flessnerchernosky-ops.github.io/robot-delay-lab/media/social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
   <script src="engine.js" defer></script><script src="app.js" defer></script>
 </head>
 <body><main>
-  <nav><a href="../" data-t="previous">← 太空追星</a><a href="https://github.com/flessnerchernosky-ops/robot-delay-lab">ROBOT DELAY LAB ↗</a><div class="languages" aria-label="Language"><button id="zh" aria-pressed="true">中文</button><button id="en" aria-pressed="false">English</button></div></nav>
+  <nav><a id="all-episodes" href="../showcase.html" data-t="all-episodes">← 三期项目总览</a><a href="../" data-t="previous">← 太空追星</a><a href="https://github.com/flessnerchernosky-ops/robot-delay-lab">ROBOT DELAY LAB ↗</a><div class="languages" aria-label="Language"><button id="zh" aria-pressed="true">中文</button><button id="en" aria-pressed="false">English</button></div></nav>
   <header><div><p class="eyebrow" data-t="eyebrow">第三期 · 一颗星星，两种抓法</p><h1 data-t="title">机械臂抓星星</h1><p class="subtitle">CATCH THE STARS</p><p class="intro" data-t="intro">看起来就在眼前，为什么抓不住？拖动星星，给机械臂一点延迟，看看它怎样学会停下来。</p></div><div class="hero-note"><span>★</span><p data-t="hero">无需硬件 · 无需安装<br>先动手，再理解控制</p></div></header>
   <section class="missions" aria-labelledby="mission-title"><div class="section-head"><h2 id="mission-title" data-t="choose">选择一个挑战</h2><span class="pill" data-t="duration">每局 12 秒</span></div><div class="presets"><button data-preset="reach" aria-pressed="true">① 够得着吗</button><button data-preset="overshoot" aria-pressed="false">② 抓过头了</button><button data-preset="delay" aria-pressed="false">③ 指令来晚了</button><button data-preset="limits" aria-pressed="false">④ 关节卡住了</button><button data-preset="orbit" aria-pressed="false">⑤ 星星也会走</button></div><p id="mission-copy"></p></section>
   <section class="playground" aria-labelledby="play-title"><div class="section-head"><h2 id="play-title" data-t="arena">同一颗星星，同一组限制</h2><div class="run-actions"><span id="timer">0.0 / 12 s</span><button id="pause" data-t="pause">暂停</button><button id="restart" data-t="restart">重来 ↻</button></div></div>
