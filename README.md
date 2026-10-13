@@ -23,6 +23,8 @@
 - [Embodied Reach Lab](https://github.com/flessnerchernosky-ops/embodied-reach-lab) · [像素 → 感知 → 动作 / Pixel-to-action demo](https://flessnerchernosky-ops.github.io/embodied-reach-lab/?lang=zh)
 - [Drone Hover Lab](https://github.com/flessnerchernosky-ops/drone-hover-lab) · [风扰 → 悬停控制 / Wind-to-hover demo](https://flessnerchernosky-ops.github.io/drone-hover-lab/?lang=zh)
 
+- [Greenhouse Control Lab](https://github.com/flessnerchernosky-ops/greenhouse-control-lab) · [温度 × 加热用量试玩](https://flessnerchernosky-ops.github.io/greenhouse-control-lab/?lang=zh)
+
 ## ① 小车路径跟踪 · 预测一定更好吗？
 
 ![同一路线、同一延迟的控制器对比](docs/media/path-tracking.gif)
